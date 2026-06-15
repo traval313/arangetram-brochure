@@ -1,51 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Tithi & Rushika Arangetram</title>
+  <title>Tithi & Rushika Arangetram</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #fafafa;
+    }
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    .header {
+      padding: 20px;
+    }
 
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background: #fafafa;
-        }
+    .button {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #5a2a7a;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
 
-        h1 {
-            margin-top: 20px;
-        }
-
-        iframe {
-            width: 100%;
-            height: 100vh;
-            border: none;
-        }
-
-        .download {
-            margin: 15px;
-            display: inline-block;
-            padding: 12px 20px;
-            background: #5a2a7a;
-            color: white;
-            text-decoration: none;
-            border-radius: 8px;
-        }
-    </style>
+    object {
+      width: 100%;
+      height: 85vh;
+    }
+  </style>
 </head>
-
 <body>
 
+  <div class="header">
     <h1>Tithi & Rushika Arangetram</h1>
+    <a class="button" href="./Arangetram_Brochure.pdf">Open Brochure</a>
+  </div>
 
-    <a class="download"
-       href="Arangetram_Brochure.pdf"
-       target="_blank">
-       Download Brochure
-    </a>
-
-    <iframe src="Arangetram_Brochure.pdf"></iframe>
+  <object data="./Arangetram_Brochure.pdf" type="application/pdf">
+    <p>
+      Your browser cannot preview the PDF.
+      <a href="./Arangetram_Brochure.pdf">Click here to open it.</a>
+    </p>
+  </object>
 
 </body>
 </html>
